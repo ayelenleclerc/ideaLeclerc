@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Catalogo</title>
+</head>
+
+<body>
+    <div class="container pages">
+        <header>
+            <nav class="nav">
+                <div class="nav__contianer">
+                    <h1 class="nav__logo"><img src="../img/logo.svg" alt="Logo DS" class="nav__logo--img"> Distribuidora
+                        A. Suárez S.R.L.</h1>
+                    <label for="menu" class="nav__label">
+                        <img src="../img/menu.svg" alt="Menu" class="nav__img">
+                    </label>
+                    <input type="checkbox" id="menu" class="nav__input">
+                    <div class="nav__menu">
+                        <a href="../index.html" class="nav__item">Inicio</a>
+                        <a href="./catalogo.html" class="nav__item">Catalogo</a>
+                        <a href="./marcas.html" class="nav__item">Marcas</a>
+                        <a href="./contacto.html" class="nav__item">Contacto</a>
+                        <a href="./nosotros.html" class="nav__item">Nosotros</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <main class="main-pages">
+            <h2 class="main-title">Seleccione la marca que desea consultar</h2>
+            <div class="catalogo__select">
+                <select name="marcas" id="catalogo__marcas">
+                    <option value="elegir" selected disabled>Elegir Marca haciendo click aqui </option>
+                    <option value="akapol">Akapol</option>
+                    <option value="benevia">Benevia</option>
+                    <option value="bonafide">Bonafide</option>
+                    <option value="duracell">Duracell</option>
+                    <option value="felfort">Felfort</option>
+                    <option value="ferrero">Ferrero</option>
+                    <option value="jorgito">Jorgito</option>
+                    <option value="kinder">Kinder</option>
+                    <option value="molinoscanuelas">Molinos Cañuelas</option>
+                    <option value="molinosrp">Molinos Río de la Plata</option>
+                    <option value="nutella">Nutella</option>
+                    <option value="ocb">OCB</option>
+                    <option value="prime">Prime</option>
+                    <option value="sudamericana">Importadora Sudamericana</option>
+                    <option value="tictac">Tic-Tac</option>
+                    <option value="tulipan">Tulipán</option>
+                    <option value="varios">Varios</option>
+                </select>
+            </div>
+            <!-- Los siguientes grupos de imagenes se desplegaran cuando la marca sea seleccionada, dejo solo el primer grupo a modo de ejemplo y con solo 4 imágenes -->
+            <div class="productos akapol">
+                <div class="productos__card">
+                    <img src="../img/productos/akapol/akapol_eccole.svg" alt="Eccole" class="productos__card-img">
+                    <p class="productos__card-p">6 unidades x display</p>
+                    <p class="productos__card-p"> 24 display x bulto</p>
+                </div>
+                <div class="productos__card">
+                    <img src="../img/productos/akapol/akapol_fastix.svg" alt="Fastix" class="productos__card-img">
+                    <p class="productos__card-p">6 unidades x display</p>
+                    <p class="productos__card-p"> 24 display x bulto</p>
+                </div>
+                <div class="productos__card">
+                    <img src="../img/productos/akapol/akapol_la_gotita.svg" alt="La gotita" class="productos__card-img">
+                    <p class="productos__card-p">6 unidades x display</p>
+                    <p class="productos__card-p"> 24 display x bulto</p>
+                </div>
+                <div class="productos__card">
+                    <img src="../img/productos/akapol/akapol_la_gotita_gel.svg" alt="La gotita gel"
+                        class="productos__card-img">
+                    <p class="productos__card-p">6 unidades x display</p>
+                    <p class="productos__card-p"> 24 display x bulto</p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer__container">
+                <ul class="footer__list">
+                    <li><a class="footer__item"
+                            href="https://www.google.com.ar/maps/place/Av.+D%C3%ADaz+V%C3%A9lez+1044,+Ciudadela,+Provincia+de+Buenos+Aires/@-34.6497645,-58.5373111,17z/data=!3m1!4b1!4m5!3m4!1s0x95bcc868efd21f2f:0xd73e6cab1ad03a9!8m2!3d-34.6497645!4d-58.5351224"
+                            target="_blank">Av.
+                            Díaz Velez 1044, Ciudadela</a></li>
+                    <li class="footer__item">Teléfono: (+54)911-4657-2294</li>
+                    <li><a class="footer__item" href="mailto:aliciasuarez_2006@hotmail.com">E-mail</a></li>
+                </ul>
+                <ul class="footer__list">
+                    <li><a class="footer__item" href="../index.html">Inicio</a></li>
+                    <li><a class="footer__item" href="./marcas.html">Marcas</a></li>
+                    <li><a class="footer__item" href="./contacto.html">Contacto</a></li>
+                    <li><a class="footer__item" href="./nosotros.html">Nosotros</a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>
