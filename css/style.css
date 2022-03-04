@@ -10,6 +10,7 @@ main:#f8f6f6;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Nunito", SansSerif;
 }
 
 .container {
@@ -92,7 +93,7 @@ a{
 .footer__item,
 .card__title--simple {
     color: #000;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     --clippy: polygon(1% 0, 1% 0, 0 100%, 0 100%);
 }
 
@@ -318,7 +319,7 @@ se usa para que los navegadores no apliquen el estilo por defecto */
     display: flex;
     padding:0;
     width:400%;
-    animation:cambio 20s infinite alternate ease;
+    animation:cambio 10s infinite alternate ease;
 }
 
 .slider img{
@@ -487,7 +488,7 @@ input[type="checkbox"] {
 /* FOOTER */
 .footer__container {
     display: flex;
-    height: 100px;
+    min-height: 100px;
     width: 100%;
     margin: 0 auto;
     justify-content: space-between;
@@ -505,6 +506,10 @@ input[type="checkbox"] {
     margin: 0 auto;
     list-style: none;
     padding: 1rem;
+    font-size: 0.9em;
+}
+.footer__item{
+    font-size: 0.9em;
 }
 
 /* MOBILE 480 */
@@ -561,11 +566,11 @@ input[type="checkbox"] {
     }
 
     .nav__logo {
-        font-size: 1.2rem;
+        font-size: 0.9rem;
     }
 
     .nav__logo--img {
-        max-width: 3rem;
+        max-width: 2.5rem;
     }
 
     /*  mobile MAIN-INDEX */
@@ -583,13 +588,15 @@ input[type="checkbox"] {
     }
 
     .card__title {
-        font-size: 2rem;
-    }
-
-    .card__list {
         font-size: 1.5rem;
     }
 
+    .card__list {
+        font-size: 1.2rem;
+    }
+.card__title--simple{
+    font-size:1.2rem;
+}
     /*  mobile ASIDE-INDEX */
     .aside__container {
         display: grid;
@@ -655,32 +662,24 @@ input[type="checkbox"] {
 
     /*  mobile FOOTER */
     .footer__container {
-        max-height: 100px;
+       min-height: 100px;
         max-width: 30rem;
         padding: 0.6rem;
         margin-bottom: 0;
+        display:flex;
     }
 
-    .footer__list {
+    .footer__list.footer-info {
         margin-top: 8px;
-        display: flex;
-        flex-direction: column;
         width: 100%;
-        height: 90%;
-        align-items: center;
-        justify-content: center;
+        flex-wrap: wrap;
     }
 
-    .footer__list li {
-        padding: 3px;
-        line-height: 0.8rem;
-        margin: 0;
+    .footer__list.footer-menu {
+      display: none;
     }
 
-    .footer__item {
-        font-size: 1rem;
-        line-height: 0.8rem;
-    }
+
 }
 
 /* MOBILE 768 */
