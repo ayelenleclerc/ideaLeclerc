@@ -44,6 +44,7 @@ main {
 
 aside {
     grid-area: aside;
+    align-items: center;
 }
 
 footer {
@@ -279,6 +280,7 @@ se usa para que los navegadores no apliquen el estilo por defecto */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    justify-items: center;
 }
 
 .productos__card {
